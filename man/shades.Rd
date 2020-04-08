@@ -7,10 +7,10 @@
 shades(color, n)
 }
 \arguments{
-\item{color}{the name or idea of a R color}
+\item{color}{the name or ID of the R color use for the darkest shade}
 
 \item{n}{number or shades wanted}
 }
 \description{
-A simple function to genarte shade of one color by changing its opacity
+A simple function to generate colored shades by changing opacity of the original color
 }

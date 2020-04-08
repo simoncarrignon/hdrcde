@@ -246,6 +246,8 @@ hdr.boxplot <- function(x, prob=c(99,50), h=hdrbw(BoxCox(x,lambda),mean(prob)), 
 {
     if(!is.list(x))
         x <- list(x)
+    if(length(col)==1 & length(prob) > 1 )
+        col <- shade(col,length(prob))
     prob <- -sort(-prob)
     nplots <- length(x)
     junk <- unlist(x)

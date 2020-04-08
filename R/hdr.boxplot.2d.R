@@ -226,7 +226,7 @@ alpha <- function(color,alpha) rgb(t(col2rgb(color)/255),alpha=alpha)
 
 #' Shades
 #'
-#' A simple function to genarte shade of one color by changing its opacity
-#' @param  color the name or idea of a R color
+#' A simple function to generate colored shades by changing opacity of the original color
+#' @param  color the name or ID of the R color use for the darkest shade
 #' @param  n number or shades wanted
 shades<-function(color,n) sapply(seq(0,1,length.out=n+1),alpha,color=color)[2:(n+1)]
